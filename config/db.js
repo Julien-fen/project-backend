@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const { Sequelize } = require('sequelize');
 
 // Connexion à PostgreSQL avec les variables d'environnement
