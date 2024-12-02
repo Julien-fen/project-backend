@@ -28,5 +28,10 @@ const Member = sequelize.define('Member', {
   },
 });
 
+// models/Class.js
+Class.hasMany(Member, { foreignKey: 'classId' });
+
+// models/Member.js
 Member.belongsTo(Class, { foreignKey: 'classId' });
+
 module.exports = Member;
